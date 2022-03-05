@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,uBAAuB;AAEvB,AAAA,SAAS,CAAC,GAAG,CAAC;EACV,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,KAAK;EAAE,yCAAyC;EAC1D,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "botonwsp.scss"
+    ],
+    "names": [],
+    "file": "botonwsp.css"
+}

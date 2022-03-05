@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* BOTON DE WHATSAPP */
+.botonWsp img {
+  width: 70px;
+  position: fixed;
+  /*--POSICION FIJA EN DESPLAZAMIENTO----*/
+  bottom: 10px;
+  right: 10px;
+}
+
+/*------CONOCENOS--------*/
+.contenedor {
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  border: solid 1.5px #8c998c;
+  /*--RECUADRO--*/
+  border-radius: 25px;
+  /*--REDONDEO DEL RECUADRO--*/
+}
+
+.contenedor h2 {
+  margin-top: 15px;
+  /*--MARGEN SUPERIOR DEL H2--*/
+  margin-bottom: 15px;
+  /*--MARGEN INFERIOR DEL H2--*/
+}
+
+.contenedor p {
+  font-size: 23px;
+  margin: 23px;
+}
+
+a:hover
+a:focus {
+  background-size: 100% 2px;
+}
+
+/*---------SECCION CONTACTO----------*/
+.area {
+  display: block;
+  width: 50%;
+  /*------FULL RESPONSIVE | QUE OCUPE EL 50%-------*/
+  padding: 10px;
+  margin: 23px auto;
+}
+
+.boton {
+  color: black;
+  background-color: #e3fce3;
+  padding: 10px;
+  text-transform: uppercase;
+  /*--MAYUSCULAS--*/
+  font-weight: bold;
+  /*--NEGRITAS--*/
+  border: none;
+  /*--QUITAR SOMBREADO----*/
+  border-radius: 2.3px;
+  cursor: pointer;
+}
+
+/*------SECCION TIENDA | APLICAMOS GRIDS----------*/
+.imagenGaleria {
+  width: 100%;
+  height: 100%;
+  /*TAMAÑO*/
+}
+
+.imagenGaleria:hover {
+  -webkit-filter: contrast(90%);
+          filter: contrast(90%);
+  /*SE PONE GRIS*/
+  z-index: 6;
+}
+
+.gridPrincipal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis";
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*-------VISTA DESDE CELULAR---------*/
+@media only screen and (max-width: 599px) {
+  .gridPrincipal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "imagenUno" "imagenDos" "imagenTres" "imagenCuatro" "imagenCinco" "imagenSeis";
+    /*UNO DEBAJO DEL OTRO*/
+  }
+  .imagenUno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: imagenUno;
+  }
+  .imagenDos {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: imagenDos;
+  }
+  .imagenTres {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: imagenTres;
+  }
+  .imagenCuatro {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: imagenCuatro;
+  }
+  .imagenCinco {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: imagenCinco;
+  }
+  .imagenSeis {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: imagenSeis;
+  }
+  /*-------VISTA EN TABLET-------*/
+}
+
+@media only screen and (max-width: 599px) and (min-width: 600px) and (max-width: 1023px) {
+  .gridPrincipal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis";
+    /*DOS POR FILA*/
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /*-------VISTA EN TABLET | Header -------*/
+  .header__barranavegacion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+/*------FOOTER--------*/
+.footer {
+  background-color: #5e554d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .footer__datos {
+  font-size: 18px;
+  color: white;
+  height: 130px;
+  width: 350px;
+  text-align: start;
+  margin: 32px;
+}
+
+.footer .footer__datos--2 {
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  padding: 30px;
+}
+
+.footer .footer__logo {
+  height: 70px;
+  width: 80px;
+  margin-left: 350px;
+}
+
+/*------HEADER Barra de Navegacion--------*/
+.nav-item:hover:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.nav-item {
+  position: relative;
+  color: var(white);
+  font-weight: 400;
+  font-size: 0.75em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.header__logo {
+  height: 70px;
+  width: 80px;
+}
+
+.header__navbar ul {
+  padding: 30px;
+  font-size: 28px;
+}
+
+.header__navbar a {
+  color: black;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.nav-item:hover {
+  border-bottom: 3px  solid #000000;
+  text-shadow: #ffff 2px 2px 3px;
+  background-color: #e1e2e6;
+}
+
+.imagenEncabezado {
+  width: 100%;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  -webkit-transition: -webkit-box-shadow .15s ease-in-out;
+  transition: -webkit-box-shadow .15s ease-in-out;
+  transition: box-shadow .15s ease-in-out;
+  transition: box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+/*# sourceMappingURL=estilos.css.map */

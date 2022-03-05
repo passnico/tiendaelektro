@@ -1,0 +1,19 @@
+/*---------SECCION CONTACTO----------*/
+.area {
+    display: block;
+    width: 50%; /*------FULL RESPONSIVE | QUE OCUPE EL 50%-------*/
+    padding: 10px;
+    margin: 23px auto /*PARA QUE SE PONGA DE FORMA AUTOMATICA EN EL*/;
+}
+
+.boton {
+
+    color: black;
+    background-color: #e3fce3;
+    padding: 10px;
+    text-transform: uppercase; /*--MAYUSCULAS--*/
+    font-weight: bold; /*--NEGRITAS--*/
+    border: none; /*--QUITAR SOMBREADO----*/
+    border-radius: 2.3px;
+    cursor: pointer;
+}

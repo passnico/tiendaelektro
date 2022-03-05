@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*------SECCION TIENDA | APLICAMOS GRIDS----------*/
+.imagenGaleria {
+  width: 100%;
+  height: 100%;
+  /*TAMAÑO*/
+}
+
+.imagenGaleria:hover {
+  -webkit-filter: contrast(90%);
+          filter: contrast(90%);
+  /*SE PONE GRIS*/
+  z-index: 6;
+}
+
+.gridPrincipal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis";
+}
+/*# sourceMappingURL=tienda.css.map */
